@@ -11,3 +11,12 @@ You might even consider creating a symbolic link (using my local agents folder a
 ```bash
 ln -s $(realpath Agents_AJR) /path/to/pysc2/agents/AJR
 ```
+
+To run an agent, follow the instructions on the pysc2 repo. Normally this would look something like:
+```shell
+$ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.scripted_agent.CollectMineralShards
+```
+This can also be done for agents within linked folders. Again, using my folder as the example:
+```shell
+$ python -m pysc2.bin.agent --map Simple64 --agent pysc2.agents.AJR.random_agent.RandomAgent
+```
