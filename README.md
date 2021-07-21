@@ -1,4 +1,3 @@
-# sc2
 # Links
 + [pysc2](https://github.com/deepmind/pysc2)
 + [Blizzard sc2client](https://github.com/Blizzard/s2client-proto#downloads)
@@ -17,6 +16,7 @@ You might even consider creating a symbolic link (using my local agents folder a
 ln -s $(realpath Agents_AJR) /path/to/pysc2/agents/AJR
 ```
 
+# Running Agents
 To run an agent, follow the instructions on the pysc2 repo. Normally this would look something like:
 ```shell
 $ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.scripted_agent.CollectMineralShards
