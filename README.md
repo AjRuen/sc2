@@ -20,3 +20,26 @@ This can also be done for agents within linked folders. Again, using my folder a
 ```shell
 $ python -m pysc2.bin.agent --map Simple64 --agent pysc2.agents.AJR.random_agent.RandomAgent
 ```
+
+# Coding Conventions Courtesy of Tyler
+## Branches
+When developing we must be sure to not lose track of or lose sight of our work.
+Thus, we will be using the following branches
++ main
+  + Code from development is merged here. This code will be the latest stable 
+work.  
++ development
+  + Code from feature branches is merged here. This code will be the latest and
+(hopefully) greatest.
++ <feature_branch>
+  + There will be several of these branches, named after what "feature" is 
+  being attempted. They may link to several issues. The "feature" in question
+  may also be a "bug".
+
+## Github Issues
+We need to keep our work organized and our plans transparent. Github issues 
+should thus be created not only for real "issues" like bugs, but also ideas and
+plans.
+For the moment we are simply planning on having several free floating issues 
+that will link to each other when appropriate.
+If deemed beneficial we may shift to projects.
