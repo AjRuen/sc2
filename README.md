@@ -3,6 +3,11 @@
 + [pysc2](https://github.com/deepmind/pysc2)
 + [Blizzard sc2client](https://github.com/Blizzard/s2client-proto#downloads)
 
+# Setup
+## Installation of Python Packages
+Follow instructions on the pysc2 repo, this should also install any additional necessary packages.
+Follow instructions on the Blizzard sc2client repo.
+
 ## Syncing Agents to pysc2
 The contents of your agents directory within the `src` directory should be copied to the `pysc2/agents/`
  folder in your local copy of the `pysc` package.
