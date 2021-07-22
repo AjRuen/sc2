@@ -26,6 +26,22 @@ This can also be done for agents within linked folders. Again, using my folder a
 $ python -m pysc2.bin.agent --map Simple64 --agent pysc2.agents.AJR.random_agent.RandomAgent
 ```
 
+## Running agents through script
+You might consider putting the run command into a script for ease of use, especially in cases where you have a lot of 
+ arguments in the command. For example, if wanted to specify that my agent will always be Terran and play against a 
+ very easy bot I could use:
+```shell
+$ echo "python -m pysc2.bin.agent --map Simple64 --agent pysc2.agents.AJR.random_agent.RandomAgent --agent_race terran --difficulty very_easy" > script-name.sh
+```
+This copies the command into a script in the working directory. Next, make the script executable using:
+```shell
+$ chmod +x script-name.sh
+```
+And then I can run:
+```shell
+$ ./script-name.sh
+```
+
 # Coding Conventions Courtesy of Tyler
 ## Branches
 When developing we must be sure to not lose track of or lose sight of our work.

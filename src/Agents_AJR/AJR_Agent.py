@@ -10,14 +10,21 @@ class AJRAgent(base_agent.BaseAgent):
 
   def __init__(self):
     super(AJRAgent, self).__init__()
+    print("THIS AGENT WAS INITIALIZED")
 
   def step(self, obs):
     super(AJRAgent, self).step(obs)
+    # print observations :)
+    print("PRINTING OBS MAYBE?:", obs)
     
-    return actions.FunctionCall(actions.FUNCTIONS.no_op.id, [])
+    # Get and return a random action (for debugging purposes)
+    function_id = numpy.random.choice(obs.observation.available_actions)
+    args = [[numpy.random.randint(0, size) for size in arg.sizes]
+            for arg in self.action_spec.functions[function_id].args]
+    return actions.FunctionCall(function_id, args)
 
 
-
+"""
 def main(unused_argv):
     agent = AJRAgent()
     try:
@@ -47,4 +54,5 @@ def main(unused_argv):
       pass
 
 if __name__ == "__main__":
-  app.run(main)
+    app.run(main)
+"""
