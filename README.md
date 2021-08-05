@@ -6,11 +6,12 @@
 ## Installation of Python Packages
 Follow instructions on the pysc2 repo, this should also install any additional necessary packages.
 Follow instructions on the Blizzard sc2client repo.
+Any setup instructions given here will be for a linux OS however, there shouldn't be too many differences if using Windows.
 
 ## Syncing Agents to pysc2
 The contents of your agents directory within the `src` directory should be copied to the `pysc2/agents/`
  folder in your local copy of the `pysc` package.
-You might even consider creating a symbolic link (using my local agents folder as an example and beginning with `src` 
+Alternatively, you might even consider creating a symbolic link (using my local agents folder as an example and beginning with `src` 
  as the working directory):
 ```bash
 ln -s $(realpath Agents_AJR) /path/to/pysc2/agents/AJR
