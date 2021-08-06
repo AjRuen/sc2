@@ -1,6 +1,12 @@
 # Links
+## Main
 + [pysc2](https://github.com/deepmind/pysc2)
 + [Blizzard sc2client](https://github.com/Blizzard/s2client-proto#downloads)
++ [Pro Replays](https://lotv.spawningtool.com/replays/?pro_only=on)
+
+## Useful References
++ [Decipering Alphastar](https://ychai.uk/notes/2019/07/21/RL/DRL/Decipher-AlphaStar-on-StarCraft-II/)
++ [Extracting from Replays](https://github.com/narhen/pysc2-replay)
 
 # Setup
 ## Installation of Python Packages
