@@ -2,7 +2,9 @@
 ## Main
 + [pysc2](https://github.com/deepmind/pysc2)
 + [Blizzard sc2client](https://github.com/Blizzard/s2client-proto#downloads)
+  + The anonymized replays available are for game version 3.16.1
 + [Pro Replays](https://lotv.spawningtool.com/replays/?pro_only=on)
+  + Replays available here are mostly on version 4.11.0 and 4.7.1
 
 ## Useful References
 + [Decipering Alphastar](https://ychai.uk/notes/2019/07/21/RL/DRL/Decipher-AlphaStar-on-StarCraft-II/)
