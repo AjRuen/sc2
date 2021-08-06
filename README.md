@@ -68,8 +68,5 @@ work.
 
 ## Github Issues
 We need to keep our work organized and our plans transparent. Github issues 
-should thus be created not only for real "issues" like bugs, but also ideas and
+should be created not only for real "issues" like bugs, but also ideas and
 plans.
-For the moment we are simply planning on having several free floating issues 
-that will link to each other when appropriate.
-If deemed beneficial we may shift to projects.
