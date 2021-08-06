@@ -14,10 +14,6 @@ class Replay_T_Agent(base_agent.BaseAgent):
   def step(self, obs):
     super(Replay_T_Agent, self).step(obs)
     
-    # Get and return a random action (for debugging purposes)
-    function_id = numpy.random.choice(obs.observation.available_actions)
-    args = [[numpy.random.randint(0, size) for size in arg.sizes]
-            for arg in self.action_spec.functions[function_id].args]
-
-    return actions.FunctionCall(function_id, args)
+    # Return no_op until agent can be trained using replays
+    return actions.FunctionCall(actions.FUNCTIONS.no_op.id, [])
   
